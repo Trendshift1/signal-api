@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: signal-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python signal_server_flask.py
+    plan: free
